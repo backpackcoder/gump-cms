@@ -26,6 +26,7 @@
 /.sass-cache
 /connect.lock
 /coverage/*
+/karma_html/*
 /libpeerconnection.log
 npm-debug.log
 testem.log
@@ -38,3 +39,5 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+
