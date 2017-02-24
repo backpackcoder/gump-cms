@@ -1,5 +1,5 @@
 <div class="container-fluid fixed-top">
-    <div class="row">
+    <div class="row" style="padding: 0 16px;">
         <div class="col-md-6">
             <i class="fa fa-phone"></i>
             Call us: <a href="tel:{{phone}}">{{phone}}</a>
@@ -12,4 +12,23 @@
             <a href="{{urls.youtube}}"><i class="fa fa-youtube"></i></a>
         </div>
     </div>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#divMainMenu" aria-controls="divMainMenu"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <h1>{{title}}</h1>
+            <h2>{{subtitle}}</h2>
+        </a>
+        <div class="collapse navbar-collapse" id="divMainMenu">
+            <ul class="navbar-nav nav-pills">
+                <li *ngFor="let item of menuItems" class="nav-item" [ngClass]="{active: item.isActive}">
+                    <a class="nav-link" href="#">{{item.name}} <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
+
