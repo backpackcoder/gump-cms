@@ -13,7 +13,15 @@
     font-size: 15px;
 }
 
-.nav-pills .nav-item.active>.nav-link {
+.navbar-nav.nav-pills .nav-item.active>.nav-link {
     background-color: #0275d8;
     color: #f7f7f7;
+}
+
+.container-fluid .row {
+    margin: 0;
+}
+
+.bg-white {
+    background-color: #ffffff;
 }
